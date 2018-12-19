@@ -1,0 +1,2 @@
+# scalar_multiplication_autoencoder
+Implementation scalar multiplication by autoencoder
