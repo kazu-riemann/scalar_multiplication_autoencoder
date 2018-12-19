@@ -99,13 +99,13 @@ if __name__ == "__main__":
     train_data1 = \
     from_1d_to_3d(xs_train1, ys_train1, zs_train1)
 
-    # get target train data
+    #.. get target train data
     xs_train2, ys_train2, zs_train2 = \
     get_data_file('data/sphere_plot_r2.dat')
     train_data2 = \
     from_1d_to_3d(xs_train2, ys_train2, zs_train2)
 
-    # get test data
+    #.. get test data
     xs_test, ys_test, zs_test = \
     get_data_file('data/sphere_plot_r100.dat')
     test_data = \
@@ -115,7 +115,7 @@ if __name__ == "__main__":
     print("train2 shape", train_data2.shape)
     print("test shape", test_data.shape)
 
-    # fit autoencoder
+    #.. fit autoencoder
     autoencoder.fit(train_data1, train_data2,
                     epochs=40,
                     batch_size=None,
